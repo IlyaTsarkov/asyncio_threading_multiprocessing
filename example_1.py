@@ -10,8 +10,8 @@ async def async_func():
 
 async def main():
     star_time = time.time()
-    await asyncio.gather(async_func(), async_func(), async_func(), async_func(), async_func(), async_func(),
-                         async_func(), async_func(), async_func(), async_func())
+    await asyncio.gather(async_func(), async_func(), async_func(), async_func(), async_func(),
+                         async_func(), async_func(), async_func(), async_func(), async_func(),)
     finish_time = time.time()
     release_time = finish_time - star_time
     print(release_time)
